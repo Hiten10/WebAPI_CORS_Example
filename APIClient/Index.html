@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="Scripts/jquery-2.2.3.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btnCors").click(function () {
+                $.ajax({
+                    url: "http://localhost:1969/api/Students/All",
+                    method: "GET",
+                    contentType: "application/json",
+                    dataType: "json",
+                    success: function (data) {
+                        $("#result").text(JSON.stringify(data));
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) { $("#error").text(jqXHR.responseText || textStatus || errorThrown); }
+
+                });
+            });
+        });
+
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                $.ajax({
+                    url: "http://localhost:1969/api/Simple/",
+                    method: "GET",
+                    crossDomain: true,
+                    contentType: "application/json",
+                    dataType: "jsonp",
+                    //jsonp: "$callback",
+                    success: function (data) {
+                        $("#result").text(data);
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) { $("#error").text(jqXHR.responseText || textStatus || errorThrown); }
+
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="btnCors">Get Data with Cors</button>
+    <button id="btn">Get Data with JsonP</button>
+    <div id="result"></div>
+    <div id="error"></div>
+</body>
+</html>

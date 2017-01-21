@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{1A8DD11C-351E-4843-AE54-55ABF04C68D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIClient", "APIClient\APIClient.csproj", "{1A3C6574-029D-4F77-AB77-54881E8F535E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A8DD11C-351E-4843-AE54-55ABF04C68D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A8DD11C-351E-4843-AE54-55ABF04C68D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A8DD11C-351E-4843-AE54-55ABF04C68D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A8DD11C-351E-4843-AE54-55ABF04C68D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A3C6574-029D-4F77-AB77-54881E8F535E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A3C6574-029D-4F77-AB77-54881E8F535E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A3C6574-029D-4F77-AB77-54881E8F535E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A3C6574-029D-4F77-AB77-54881E8F535E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
